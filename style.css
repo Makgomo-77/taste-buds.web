@@ -1,1 +1,196 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b22222;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url('images/restaurant.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.hero-content p {
+  color: #f4f4f4;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 40px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact-section button {
+  padding: 10px;
+  background: #b22222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #b22222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+/* Booking Section */
+.booking-section {
+  padding: 40px;
+  background: #fff5f5;
+  text-align: center;
+}
+
+.booking-section form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-section input,
+.booking-section select,
+.booking-section textarea {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.booking-section button {
+  background: #b22222;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.booking-section button:hover {
+  background: #ff6347;
+}
+
+.hidden {
+  display: none;
+}
+
+#bookingMessage {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
